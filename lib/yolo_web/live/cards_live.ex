@@ -10,24 +10,24 @@ defmodule YoloWeb.CardsLive do
     %{
     name: "Third test product",
     description: "Third product description",
-    price: "8,90"
+    price: "0,00"
     },
     %{
     name: "Glazed Twist",
     description: "Crispy, glazed treats for a delicious twist on a
     classic",
-    price: "8,90"
+    price: "5,90"
     },
     %{
 
     name: "Fourth test product",
     description: "Fourth product description",
-    price: "8,90"
+    price: "0,00"
     },
     %{
     name: "One more test product",
     description: "One more product description",
-    price: "8,90"
+    price: "0,00"
     }
     ]
   def mount(_params, _session, socket) do
