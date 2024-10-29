@@ -39,14 +39,6 @@ defmodule YoloWeb.CardsLive do
     {:ok, assign(socket, products: filtered_products, selected_item: nil ), layout: false}
   end
 
-  def truncate_description(description, limit \\ 25) do
-    if String.length(description) > limit do
-      String.slice(description, 0, limit) <> "..."
-    else
-      description
-    end
-  end
-
   def handle_event("change_style", %{"index" => index}, socket) do
     selected_item = String.to_integer(index)
     {:noreply, assign(socket, selected_item: selected_item)}

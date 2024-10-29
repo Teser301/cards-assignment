@@ -8,9 +8,9 @@
           class={["flex flex-col md:flex-row gap-3 bg-teritary items-start md:items-center justify-between p-4 rounded-xl border-4 ",
           @selected_item == index && " border-green-600",
           !(@selected_item == index) && "border-transparent"]}>
-          <div>
+          <div class="overflow-hidden w-full">
             <h5 class="text-lg font-bold"><%= item.name %></h5>
-              <p class="text-base text-secondary ">
+              <p class="text-base text-secondary truncate ">
                 <%= item.description %>
             </p>
           </div>
